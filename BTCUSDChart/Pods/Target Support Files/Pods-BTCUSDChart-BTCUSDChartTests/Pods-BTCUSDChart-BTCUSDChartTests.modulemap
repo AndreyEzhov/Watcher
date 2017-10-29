@@ -1,0 +1,6 @@
+framework module Pods_BTCUSDChart_BTCUSDChartTests {
+  umbrella header "Pods-BTCUSDChart-BTCUSDChartTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

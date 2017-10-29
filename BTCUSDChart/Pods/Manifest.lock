@@ -1,0 +1,23 @@
+PODS:
+  - Charts (3.0.4):
+    - Charts/Core (= 3.0.4)
+  - Charts/Core (3.0.4)
+  - ObjectMapper (3.0.0)
+  - SocketRocket (0.5.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Charts
+  - ObjectMapper
+  - SocketRocket
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Charts: 0705898046257443f0afbbc3179f4b67507b6e48
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: d3a545a3a9d79bfdb52c109eca219d79902b178f
+
+COCOAPODS: 1.2.1

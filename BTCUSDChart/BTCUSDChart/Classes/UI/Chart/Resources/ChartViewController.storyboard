@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tnd-qR-BRn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="cnc-ta-CKa">
+            <objects>
+                <viewController id="Tnd-qR-BRn" customClass="ChartViewController" customModule="BTCUSDChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ba4-tf-LzV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WwB-Fj-ARa" customClass="CandleChart" customModule="BTCUSDChart" customModuleProvider="target">
+                                <rect key="frame" x="10" y="66" width="355" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOi-OG-2vI" customClass="CandleStickChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbm-UB-HnR">
+                                <rect key="frame" x="252" y="30" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msX-7M-9Ps">
+                                <rect key="frame" x="63" y="30" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MFx-pK-bHc">
+                                <rect key="frame" x="163" y="25" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchTouch:" destination="Tnd-qR-BRn" eventType="valueChanged" id="KiA-s4-zHh"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eOi-OG-2vI" firstAttribute="leading" secondItem="QgV-Lh-jKW" secondAttribute="leading" id="3EN-03-JW6"/>
+                            <constraint firstItem="WwB-Fj-ARa" firstAttribute="trailing" secondItem="QgV-Lh-jKW" secondAttribute="trailing" constant="-10" id="Lag-cb-UpD"/>
+                            <constraint firstItem="msX-7M-9Ps" firstAttribute="centerY" secondItem="MFx-pK-bHc" secondAttribute="centerY" id="R9L-G5-o7m"/>
+                            <constraint firstItem="WwB-Fj-ARa" firstAttribute="leading" secondItem="QgV-Lh-jKW" secondAttribute="leading" constant="10" id="S6d-q0-nhh"/>
+                            <constraint firstItem="MFx-pK-bHc" firstAttribute="centerX" secondItem="QgV-Lh-jKW" secondAttribute="centerX" id="VB9-eq-6nw"/>
+                            <constraint firstItem="MFx-pK-bHc" firstAttribute="leading" secondItem="msX-7M-9Ps" secondAttribute="trailing" constant="40" id="Yxq-lK-res"/>
+                            <constraint firstItem="eOi-OG-2vI" firstAttribute="top" secondItem="MFx-pK-bHc" secondAttribute="bottom" constant="10" id="c3R-vJ-QSG"/>
+                            <constraint firstItem="Kbm-UB-HnR" firstAttribute="leading" secondItem="MFx-pK-bHc" secondAttribute="trailing" constant="40" id="c9U-QG-LLd"/>
+                            <constraint firstItem="QgV-Lh-jKW" firstAttribute="trailing" secondItem="eOi-OG-2vI" secondAttribute="trailing" id="cSB-tS-Dqw"/>
+                            <constraint firstItem="Kbm-UB-HnR" firstAttribute="centerY" secondItem="MFx-pK-bHc" secondAttribute="centerY" id="k2E-4j-HnM"/>
+                            <constraint firstItem="WwB-Fj-ARa" firstAttribute="bottom" secondItem="QgV-Lh-jKW" secondAttribute="bottom" constant="-10" id="kRB-w9-IKj"/>
+                            <constraint firstItem="MFx-pK-bHc" firstAttribute="top" secondItem="ba4-tf-LzV" secondAttribute="top" constant="25" id="lG8-H2-Ii8"/>
+                            <constraint firstItem="WwB-Fj-ARa" firstAttribute="top" secondItem="MFx-pK-bHc" secondAttribute="bottom" constant="10" id="lgS-na-tKi"/>
+                            <constraint firstItem="QgV-Lh-jKW" firstAttribute="bottom" secondItem="eOi-OG-2vI" secondAttribute="bottom" id="nxv-9w-MDv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QgV-Lh-jKW"/>
+                    </view>
+                    <connections>
+                        <outlet property="candleChartView" destination="eOi-OG-2vI" id="fkd-rN-UqX"/>
+                        <outlet property="chartSwitch" destination="MFx-pK-bHc" id="Psy-aF-0HT"/>
+                        <outlet property="customChart" destination="WwB-Fj-ARa" id="1I0-Rf-pbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czc-vQ-Hu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.79999999999995" y="-262.21889055472263"/>
+        </scene>
+    </scenes>
+</document>

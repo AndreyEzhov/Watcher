@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4A64A8A2F998CC1B13501D /* Pods_BTCUSDChart_BTCUSDChartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2C6EA0801565DDA2CB13D0 /* Pods_BTCUSDChart_BTCUSDChartTests.framework */; };
+		120705A21FA4C52D0003E30A /* GrandCentralDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A11FA4C52D0003E30A /* GrandCentralDispatch.swift */; };
+		120705A31FA4C5310003E30A /* GrandCentralDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A11FA4C52D0003E30A /* GrandCentralDispatch.swift */; };
+		120705A61FA4EE250003E30A /* CandleChartDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A51FA4EE250003E30A /* CandleChartDataPoint.swift */; };
+		120705A81FA5164F0003E30A /* CandleChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A71FA5164F0003E30A /* CandleChartDataSource.swift */; };
+		120705AA1FA517DB0003E30A /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A91FA517DB0003E30A /* CandleChart.swift */; };
+		120705AF1FA5F3EB0003E30A /* CandleChartDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A51FA4EE250003E30A /* CandleChartDataPoint.swift */; };
+		120705B01FA5F3EB0003E30A /* CandleChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A71FA5164F0003E30A /* CandleChartDataSource.swift */; };
+		120705B11FA5F3EB0003E30A /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120705A91FA517DB0003E30A /* CandleChart.swift */; };
+		1217A80E1FA4997800DA5D6F /* JsonApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A80D1FA4997800DA5D6F /* JsonApiUtils.swift */; };
+		1217A8101FA4999700DA5D6F /* ParcelableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A80F1FA4999700DA5D6F /* ParcelableModel.swift */; };
+		1217A8131FA4A06D00DA5D6F /* SocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8121FA4A06D00DA5D6F /* SocketResponse.swift */; };
+		1217A8141FA4A06D00DA5D6F /* SocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8121FA4A06D00DA5D6F /* SocketResponse.swift */; };
+		1217A8161FA4A09F00DA5D6F /* TickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8151FA4A09F00DA5D6F /* TickModel.swift */; };
+		1217A8171FA4A09F00DA5D6F /* TickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8151FA4A09F00DA5D6F /* TickModel.swift */; };
+		1217A8191FA4A11400DA5D6F /* TypeCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8181FA4A11400DA5D6F /* TypeCast.swift */; };
+		1217A81A1FA4A11400DA5D6F /* TypeCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8181FA4A11400DA5D6F /* TypeCast.swift */; };
+		1217A81C1FA4A17500DA5D6F /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A81B1FA4A17500DA5D6F /* DoubleTransform.swift */; };
+		1217A81D1FA4A17500DA5D6F /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A81B1FA4A17500DA5D6F /* DoubleTransform.swift */; };
+		1217A81F1FA4A30600DA5D6F /* TickModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A81E1FA4A30600DA5D6F /* TickModelTest.swift */; };
+		1217A8201FA4A37400DA5D6F /* JsonApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A80D1FA4997800DA5D6F /* JsonApiUtils.swift */; };
+		1217A8211FA4A40E00DA5D6F /* ParcelableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A80F1FA4999700DA5D6F /* ParcelableModel.swift */; };
+		1217A8231FA4A48900DA5D6F /* CandleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8221FA4A48900DA5D6F /* CandleModel.swift */; };
+		1217A8241FA4A48900DA5D6F /* CandleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8221FA4A48900DA5D6F /* CandleModel.swift */; };
+		1217A8261FA4A4F800DA5D6F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8251FA4A4F800DA5D6F /* Double+Extension.swift */; };
+		1217A8271FA4A4F800DA5D6F /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8251FA4A4F800DA5D6F /* Double+Extension.swift */; };
+		1217A8291FA4A54600DA5D6F /* CandleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8281FA4A54600DA5D6F /* CandleTest.swift */; };
+		1217A82B1FA4A5A800DA5D6F /* CandleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A82A1FA4A5A800DA5D6F /* CandleManager.swift */; };
+		1217A82C1FA4A5A800DA5D6F /* CandleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A82A1FA4A5A800DA5D6F /* CandleManager.swift */; };
+		1217A82E1FA4A5BE00DA5D6F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A82D1FA4A5BE00DA5D6F /* Date+Extension.swift */; };
+		1217A82F1FA4A5BE00DA5D6F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A82D1FA4A5BE00DA5D6F /* Date+Extension.swift */; };
+		1217A8311FA4A7A000DA5D6F /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217A8301FA4A7A000DA5D6F /* DateExtensionTests.swift */; };
+		1259E3721FA4921C00EE5DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1259E3711FA4921C00EE5DAB /* Assets.xcassets */; };
+		1259E3751FA4921C00EE5DAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1259E3731FA4921C00EE5DAB /* LaunchScreen.storyboard */; };
+		12E14DCE1FA49378001B34D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DCD1FA49378001B34D2 /* AppDelegate.swift */; };
+		12E14DCF1FA49378001B34D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DCD1FA49378001B34D2 /* AppDelegate.swift */; };
+		12E14DD71FA493FD001B34D2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DD61FA493FD001B34D2 /* Router.swift */; };
+		12E14DD81FA493FD001B34D2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DD61FA493FD001B34D2 /* Router.swift */; };
+		12E14DDA1FA4942B001B34D2 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DD91FA4942B001B34D2 /* Assembly.swift */; };
+		12E14DDB1FA4942B001B34D2 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DD91FA4942B001B34D2 /* Assembly.swift */; };
+		12E14DDD1FA4948F001B34D2 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DDC1FA4948F001B34D2 /* MVP.swift */; };
+		12E14DDE1FA4948F001B34D2 /* MVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DDC1FA4948F001B34D2 /* MVP.swift */; };
+		12E14DE11FA49556001B34D2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DE01FA49556001B34D2 /* UIViewController+Extension.swift */; };
+		12E14DE21FA49556001B34D2 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DE01FA49556001B34D2 /* UIViewController+Extension.swift */; };
+		12E14DE81FA496BB001B34D2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DE71FA496BB001B34D2 /* ChartViewController.swift */; };
+		12E14DE91FA496BB001B34D2 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DE71FA496BB001B34D2 /* ChartViewController.swift */; };
+		12E14DEB1FA496DA001B34D2 /* ChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E14DEA1FA496DA001B34D2 /* ChartViewController.storyboard */; };
+		12E14DEC1FA496DA001B34D2 /* ChartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E14DEA1FA496DA001B34D2 /* ChartViewController.storyboard */; };
+		12E14DEE1FA49704001B34D2 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DED1FA49704001B34D2 /* ChartPresenter.swift */; };
+		12E14DEF1FA49704001B34D2 /* ChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DED1FA49704001B34D2 /* ChartPresenter.swift */; };
+		12E14DF11FA4977D001B34D2 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DF01FA4977D001B34D2 /* Consts.swift */; };
+		12E14DF21FA4977D001B34D2 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E14DF01FA4977D001B34D2 /* Consts.swift */; };
+		8F1881C751550C1CA3ECA738 /* Pods_BTCUSDChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B63C6744CC05EC435ED443B /* Pods_BTCUSDChart.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1259E37C1FA4921C00EE5DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1259E35F1FA4921C00EE5DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259E3661FA4921C00EE5DAB;
+			remoteInfo = BTCUSDChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		120705A11FA4C52D0003E30A /* GrandCentralDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandCentralDispatch.swift; sourceTree = "<group>"; };
+		120705A51FA4EE250003E30A /* CandleChartDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChartDataPoint.swift; sourceTree = "<group>"; };
+		120705A71FA5164F0003E30A /* CandleChartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChartDataSource.swift; sourceTree = "<group>"; };
+		120705A91FA517DB0003E30A /* CandleChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChart.swift; sourceTree = "<group>"; };
+		1217A80D1FA4997800DA5D6F /* JsonApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonApiUtils.swift; sourceTree = "<group>"; };
+		1217A80F1FA4999700DA5D6F /* ParcelableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParcelableModel.swift; sourceTree = "<group>"; };
+		1217A8121FA4A06D00DA5D6F /* SocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketResponse.swift; sourceTree = "<group>"; };
+		1217A8151FA4A09F00DA5D6F /* TickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickModel.swift; sourceTree = "<group>"; };
+		1217A8181FA4A11400DA5D6F /* TypeCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeCast.swift; sourceTree = "<group>"; };
+		1217A81B1FA4A17500DA5D6F /* DoubleTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTransform.swift; sourceTree = "<group>"; };
+		1217A81E1FA4A30600DA5D6F /* TickModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickModelTest.swift; sourceTree = "<group>"; };
+		1217A8221FA4A48900DA5D6F /* CandleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleModel.swift; sourceTree = "<group>"; };
+		1217A8251FA4A4F800DA5D6F /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		1217A8281FA4A54600DA5D6F /* CandleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleTest.swift; sourceTree = "<group>"; };
+		1217A82A1FA4A5A800DA5D6F /* CandleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleManager.swift; sourceTree = "<group>"; };
+		1217A82D1FA4A5BE00DA5D6F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1217A8301FA4A7A000DA5D6F /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		1259E3671FA4921C00EE5DAB /* BTCUSDChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCUSDChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1259E3711FA4921C00EE5DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1259E3741FA4921C00EE5DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1259E3761FA4921C00EE5DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1259E37B1FA4921C00EE5DAB /* BTCUSDChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTCUSDChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1259E3811FA4921C00EE5DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E14DCD1FA49378001B34D2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12E14DD61FA493FD001B34D2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		12E14DD91FA4942B001B34D2 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		12E14DDC1FA4948F001B34D2 /* MVP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP.swift; sourceTree = "<group>"; };
+		12E14DE01FA49556001B34D2 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		12E14DE71FA496BB001B34D2 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		12E14DEA1FA496DA001B34D2 /* ChartViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChartViewController.storyboard; sourceTree = "<group>"; };
+		12E14DED1FA49704001B34D2 /* ChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPresenter.swift; sourceTree = "<group>"; };
+		12E14DF01FA4977D001B34D2 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		1D017563B69D12AC8297CA37 /* Pods-BTCUSDChart-BTCUSDChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCUSDChart-BTCUSDChartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTCUSDChart-BTCUSDChartTests/Pods-BTCUSDChart-BTCUSDChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33FC5A2EC4D3C4710ECF109D /* Pods-BTCUSDChart-BTCUSDChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCUSDChart-BTCUSDChartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTCUSDChart-BTCUSDChartTests/Pods-BTCUSDChart-BTCUSDChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		3DE46E23C32633759603C09D /* Pods-BTCUSDChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCUSDChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BTCUSDChart/Pods-BTCUSDChart.debug.xcconfig"; sourceTree = "<group>"; };
+		9B63C6744CC05EC435ED443B /* Pods_BTCUSDChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTCUSDChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2C6EA0801565DDA2CB13D0 /* Pods_BTCUSDChart_BTCUSDChartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BTCUSDChart_BTCUSDChartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD53F4E8CED85F3236275B72 /* Pods-BTCUSDChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BTCUSDChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-BTCUSDChart/Pods-BTCUSDChart.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1259E3641FA4921C00EE5DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1881C751550C1CA3ECA738 /* Pods_BTCUSDChart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1259E3781FA4921C00EE5DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4A64A8A2F998CC1B13501D /* Pods_BTCUSDChart_BTCUSDChartTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120705A41FA4EDFA0003E30A /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				120705A51FA4EE250003E30A /* CandleChartDataPoint.swift */,
+				120705A71FA5164F0003E30A /* CandleChartDataSource.swift */,
+				120705A91FA517DB0003E30A /* CandleChart.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		1217A8111FA49A4000DA5D6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1217A8121FA4A06D00DA5D6F /* SocketResponse.swift */,
+				1217A8151FA4A09F00DA5D6F /* TickModel.swift */,
+				1217A8221FA4A48900DA5D6F /* CandleModel.swift */,
+				1217A82A1FA4A5A800DA5D6F /* CandleManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1259E35E1FA4921C00EE5DAB = {
+			isa = PBXGroup;
+			children = (
+				1259E3691FA4921C00EE5DAB /* BTCUSDChart */,
+				1259E37E1FA4921C00EE5DAB /* BTCUSDChartTests */,
+				1259E3681FA4921C00EE5DAB /* Products */,
+				DF1110BC2833F2D4CDA21F2A /* Pods */,
+				3E7258109DC56A7AD8D6E6D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1259E3681FA4921C00EE5DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1259E3671FA4921C00EE5DAB /* BTCUSDChart.app */,
+				1259E37B1FA4921C00EE5DAB /* BTCUSDChartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1259E3691FA4921C00EE5DAB /* BTCUSDChart */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DCC1FA49378001B34D2 /* Classes */,
+				1259E3711FA4921C00EE5DAB /* Assets.xcassets */,
+				1259E3731FA4921C00EE5DAB /* LaunchScreen.storyboard */,
+				1259E3761FA4921C00EE5DAB /* Info.plist */,
+			);
+			path = BTCUSDChart;
+			sourceTree = "<group>";
+		};
+		1259E37E1FA4921C00EE5DAB /* BTCUSDChartTests */ = {
+			isa = PBXGroup;
+			children = (
+				1217A8281FA4A54600DA5D6F /* CandleTest.swift */,
+				1217A81E1FA4A30600DA5D6F /* TickModelTest.swift */,
+				1259E3811FA4921C00EE5DAB /* Info.plist */,
+				1217A8301FA4A7A000DA5D6F /* DateExtensionTests.swift */,
+			);
+			path = BTCUSDChartTests;
+			sourceTree = "<group>";
+		};
+		12E14DCC1FA49378001B34D2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				120705A41FA4EDFA0003E30A /* Chart */,
+				12E14DD01FA493B0001B34D2 /* Common */,
+				12E14DD11FA493B0001B34D2 /* UI */,
+				12E14DCD1FA49378001B34D2 /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		12E14DD01FA493B0001B34D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DDF1FA49528001B34D2 /* Extension */,
+				1217A8181FA4A11400DA5D6F /* TypeCast.swift */,
+				12E14DD61FA493FD001B34D2 /* Router.swift */,
+				12E14DD91FA4942B001B34D2 /* Assembly.swift */,
+				12E14DDC1FA4948F001B34D2 /* MVP.swift */,
+				12E14DF01FA4977D001B34D2 /* Consts.swift */,
+				1217A80D1FA4997800DA5D6F /* JsonApiUtils.swift */,
+				1217A80F1FA4999700DA5D6F /* ParcelableModel.swift */,
+				1217A81B1FA4A17500DA5D6F /* DoubleTransform.swift */,
+				120705A11FA4C52D0003E30A /* GrandCentralDispatch.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		12E14DD11FA493B0001B34D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DD21FA493B0001B34D2 /* Chart */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		12E14DD21FA493B0001B34D2 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				1217A8111FA49A4000DA5D6F /* Model */,
+				12E14DD31FA493B0001B34D2 /* Presenter */,
+				12E14DD41FA493B0001B34D2 /* Resources */,
+				12E14DD51FA493B0001B34D2 /* View */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		12E14DD31FA493B0001B34D2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DED1FA49704001B34D2 /* ChartPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		12E14DD41FA493B0001B34D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DEA1FA496DA001B34D2 /* ChartViewController.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		12E14DD51FA493B0001B34D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DE71FA496BB001B34D2 /* ChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		12E14DDF1FA49528001B34D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12E14DE01FA49556001B34D2 /* UIViewController+Extension.swift */,
+				1217A8251FA4A4F800DA5D6F /* Double+Extension.swift */,
+				1217A82D1FA4A5BE00DA5D6F /* Date+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3E7258109DC56A7AD8D6E6D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B63C6744CC05EC435ED443B /* Pods_BTCUSDChart.framework */,
+				CF2C6EA0801565DDA2CB13D0 /* Pods_BTCUSDChart_BTCUSDChartTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF1110BC2833F2D4CDA21F2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DE46E23C32633759603C09D /* Pods-BTCUSDChart.debug.xcconfig */,
+				DD53F4E8CED85F3236275B72 /* Pods-BTCUSDChart.release.xcconfig */,
+				1D017563B69D12AC8297CA37 /* Pods-BTCUSDChart-BTCUSDChartTests.debug.xcconfig */,
+				33FC5A2EC4D3C4710ECF109D /* Pods-BTCUSDChart-BTCUSDChartTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1259E3661FA4921C00EE5DAB /* BTCUSDChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1259E3841FA4921C00EE5DAB /* Build configuration list for PBXNativeTarget "BTCUSDChart" */;
+			buildPhases = (
+				93E5D7423DF66BD65EAA595C /* [CP] Check Pods Manifest.lock */,
+				1259E3631FA4921C00EE5DAB /* Sources */,
+				1259E3641FA4921C00EE5DAB /* Frameworks */,
+				1259E3651FA4921C00EE5DAB /* Resources */,
+				63B2C623D41DC86CB239824B /* [CP] Embed Pods Frameworks */,
+				E94C0A418C803DBA03212E59 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTCUSDChart;
+			productName = BTCUSDChart;
+			productReference = 1259E3671FA4921C00EE5DAB /* BTCUSDChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1259E37A1FA4921C00EE5DAB /* BTCUSDChartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1259E3871FA4921C00EE5DAB /* Build configuration list for PBXNativeTarget "BTCUSDChartTests" */;
+			buildPhases = (
+				AE5E3A6AED4A7CB73464DDFC /* [CP] Check Pods Manifest.lock */,
+				1259E3771FA4921C00EE5DAB /* Sources */,
+				1259E3781FA4921C00EE5DAB /* Frameworks */,
+				1259E3791FA4921C00EE5DAB /* Resources */,
+				6C463A3BE845A834B570FABF /* [CP] Embed Pods Frameworks */,
+				0671EE38AE1711ADBF6DF49D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1259E37D1FA4921C00EE5DAB /* PBXTargetDependency */,
+			);
+			name = BTCUSDChartTests;
+			productName = BTCUSDChartTests;
+			productReference = 1259E37B1FA4921C00EE5DAB /* BTCUSDChartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1259E35F1FA4921C00EE5DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Андрей Ежов";
+				TargetAttributes = {
+					1259E3661FA4921C00EE5DAB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					1259E37A1FA4921C00EE5DAB = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1259E3661FA4921C00EE5DAB;
+					};
+				};
+			};
+			buildConfigurationList = 1259E3621FA4921C00EE5DAB /* Build configuration list for PBXProject "BTCUSDChart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1259E35E1FA4921C00EE5DAB;
+			productRefGroup = 1259E3681FA4921C00EE5DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1259E3661FA4921C00EE5DAB /* BTCUSDChart */,
+				1259E37A1FA4921C00EE5DAB /* BTCUSDChartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1259E3651FA4921C00EE5DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E14DEB1FA496DA001B34D2 /* ChartViewController.storyboard in Resources */,
+				1259E3751FA4921C00EE5DAB /* LaunchScreen.storyboard in Resources */,
+				1259E3721FA4921C00EE5DAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1259E3791FA4921C00EE5DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E14DEC1FA496DA001B34D2 /* ChartViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0671EE38AE1711ADBF6DF49D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCUSDChart-BTCUSDChartTests/Pods-BTCUSDChart-BTCUSDChartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B2C623D41DC86CB239824B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCUSDChart/Pods-BTCUSDChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C463A3BE845A834B570FABF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCUSDChart-BTCUSDChartTests/Pods-BTCUSDChart-BTCUSDChartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93E5D7423DF66BD65EAA595C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5E3A6AED4A7CB73464DDFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E94C0A418C803DBA03212E59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BTCUSDChart/Pods-BTCUSDChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1259E3631FA4921C00EE5DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E14DD71FA493FD001B34D2 /* Router.swift in Sources */,
+				12E14DEE1FA49704001B34D2 /* ChartPresenter.swift in Sources */,
+				12E14DE81FA496BB001B34D2 /* ChartViewController.swift in Sources */,
+				1217A81C1FA4A17500DA5D6F /* DoubleTransform.swift in Sources */,
+				1217A8261FA4A4F800DA5D6F /* Double+Extension.swift in Sources */,
+				1217A82B1FA4A5A800DA5D6F /* CandleManager.swift in Sources */,
+				1217A8131FA4A06D00DA5D6F /* SocketResponse.swift in Sources */,
+				120705A81FA5164F0003E30A /* CandleChartDataSource.swift in Sources */,
+				12E14DDA1FA4942B001B34D2 /* Assembly.swift in Sources */,
+				12E14DCE1FA49378001B34D2 /* AppDelegate.swift in Sources */,
+				1217A8101FA4999700DA5D6F /* ParcelableModel.swift in Sources */,
+				120705A61FA4EE250003E30A /* CandleChartDataPoint.swift in Sources */,
+				1217A80E1FA4997800DA5D6F /* JsonApiUtils.swift in Sources */,
+				12E14DE11FA49556001B34D2 /* UIViewController+Extension.swift in Sources */,
+				1217A8161FA4A09F00DA5D6F /* TickModel.swift in Sources */,
+				12E14DF11FA4977D001B34D2 /* Consts.swift in Sources */,
+				120705A21FA4C52D0003E30A /* GrandCentralDispatch.swift in Sources */,
+				1217A8231FA4A48900DA5D6F /* CandleModel.swift in Sources */,
+				1217A8191FA4A11400DA5D6F /* TypeCast.swift in Sources */,
+				12E14DDD1FA4948F001B34D2 /* MVP.swift in Sources */,
+				1217A82E1FA4A5BE00DA5D6F /* Date+Extension.swift in Sources */,
+				120705AA1FA517DB0003E30A /* CandleChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1259E3771FA4921C00EE5DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1217A8201FA4A37400DA5D6F /* JsonApiUtils.swift in Sources */,
+				12E14DE21FA49556001B34D2 /* UIViewController+Extension.swift in Sources */,
+				120705AF1FA5F3EB0003E30A /* CandleChartDataPoint.swift in Sources */,
+				12E14DF21FA4977D001B34D2 /* Consts.swift in Sources */,
+				12E14DEF1FA49704001B34D2 /* ChartPresenter.swift in Sources */,
+				1217A8271FA4A4F800DA5D6F /* Double+Extension.swift in Sources */,
+				1217A82F1FA4A5BE00DA5D6F /* Date+Extension.swift in Sources */,
+				1217A8241FA4A48900DA5D6F /* CandleModel.swift in Sources */,
+				12E14DDE1FA4948F001B34D2 /* MVP.swift in Sources */,
+				1217A81F1FA4A30600DA5D6F /* TickModelTest.swift in Sources */,
+				1217A81A1FA4A11400DA5D6F /* TypeCast.swift in Sources */,
+				120705A31FA4C5310003E30A /* GrandCentralDispatch.swift in Sources */,
+				1217A8311FA4A7A000DA5D6F /* DateExtensionTests.swift in Sources */,
+				1217A81D1FA4A17500DA5D6F /* DoubleTransform.swift in Sources */,
+				1217A8291FA4A54600DA5D6F /* CandleTest.swift in Sources */,
+				1217A82C1FA4A5A800DA5D6F /* CandleManager.swift in Sources */,
+				12E14DCF1FA49378001B34D2 /* AppDelegate.swift in Sources */,
+				120705B01FA5F3EB0003E30A /* CandleChartDataSource.swift in Sources */,
+				1217A8141FA4A06D00DA5D6F /* SocketResponse.swift in Sources */,
+				12E14DDB1FA4942B001B34D2 /* Assembly.swift in Sources */,
+				12E14DD81FA493FD001B34D2 /* Router.swift in Sources */,
+				1217A8211FA4A40E00DA5D6F /* ParcelableModel.swift in Sources */,
+				120705B11FA5F3EB0003E30A /* CandleChart.swift in Sources */,
+				12E14DE91FA496BB001B34D2 /* ChartViewController.swift in Sources */,
+				1217A8171FA4A09F00DA5D6F /* TickModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1259E37D1FA4921C00EE5DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1259E3661FA4921C00EE5DAB /* BTCUSDChart */;
+			targetProxy = 1259E37C1FA4921C00EE5DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1259E3731FA4921C00EE5DAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1259E3741FA4921C00EE5DAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1259E3821FA4921C00EE5DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1259E3831FA4921C00EE5DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1259E3851FA4921C00EE5DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE46E23C32633759603C09D /* Pods-BTCUSDChart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PJ2XVG4Y2;
+				INFOPLIST_FILE = BTCUSDChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.BTCUSDChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1259E3861FA4921C00EE5DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD53F4E8CED85F3236275B72 /* Pods-BTCUSDChart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PJ2XVG4Y2;
+				INFOPLIST_FILE = BTCUSDChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.BTCUSDChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1259E3881FA4921C00EE5DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D017563B69D12AC8297CA37 /* Pods-BTCUSDChart-BTCUSDChartTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PJ2XVG4Y2;
+				INFOPLIST_FILE = BTCUSDChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.BTCUSDChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTCUSDChart.app/BTCUSDChart";
+			};
+			name = Debug;
+		};
+		1259E3891FA4921C00EE5DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FC5A2EC4D3C4710ECF109D /* Pods-BTCUSDChart-BTCUSDChartTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6PJ2XVG4Y2;
+				INFOPLIST_FILE = BTCUSDChartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = none.BTCUSDChartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTCUSDChart.app/BTCUSDChart";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1259E3621FA4921C00EE5DAB /* Build configuration list for PBXProject "BTCUSDChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1259E3821FA4921C00EE5DAB /* Debug */,
+				1259E3831FA4921C00EE5DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1259E3841FA4921C00EE5DAB /* Build configuration list for PBXNativeTarget "BTCUSDChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1259E3851FA4921C00EE5DAB /* Debug */,
+				1259E3861FA4921C00EE5DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1259E3871FA4921C00EE5DAB /* Build configuration list for PBXNativeTarget "BTCUSDChartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1259E3881FA4921C00EE5DAB /* Debug */,
+				1259E3891FA4921C00EE5DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1259E35F1FA4921C00EE5DAB /* Project object */;
+}
