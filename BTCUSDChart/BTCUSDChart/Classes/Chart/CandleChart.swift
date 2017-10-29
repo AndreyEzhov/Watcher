@@ -84,7 +84,7 @@ class CandleChart: UIView {
             let translationX = translation.x - lastPanPoint.x
             lastPanPoint = recognizer.translation(in: self)
             startX -= translationX
-            pinToLastTick = startX > maxX * pointWidth - frame.width / 2.0
+            pinToLastTick = startX > maxX * itemWidth - frame.width / 2.0
             recalculateStartX()
             setNeedsDisplay()
         }
@@ -92,7 +92,7 @@ class CandleChart: UIView {
     
     private func recalculateStartX() {
         startX = max(minX, startX)
-        startX = min(startX, maxX * pointWidth - frame.width / 2.0)
+        startX = min(startX, maxX * itemWidth - frame.width / 2.0)
         startX = max(startX, 0)
     }
     
@@ -100,7 +100,7 @@ class CandleChart: UIView {
     
     func redraw() {
         if pinToLastTick {
-            startX = maxX * pointWidth
+            startX = maxX * itemWidth
         }
         recalculateStartX()
         setNeedsDisplay()
