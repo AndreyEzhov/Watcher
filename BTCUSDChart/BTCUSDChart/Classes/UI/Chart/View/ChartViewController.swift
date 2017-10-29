@@ -52,6 +52,44 @@ class ChartViewController: BaseViewController<ChartPresentable>, ChartDisplayabl
         customChart.isHidden = chartSwitch.isOn
     }
     
+    private func drawInChart(candels: [CandleModel]) {
+        let dataEntries: [CandleChartDataEntry] = candels.map {
+            CandleChartDataEntry(x: Double($0.x),
+                                 shadowH: $0.shadowH,
+                                 shadowL: $0.shadowL,
+                                 open: $0.open,
+                                 close: $0.close)
+        }
+        
+        let chartDataSet = CandleChartDataSet(values: dataEntries, label: Consts.Positions.BTCUSD)
+        let chartData = CandleChartData(dataSets: [chartDataSet])
+        
+        chartDataSet.increasingFilled = true
+        
+        chartDataSet.shadowColor = UIColor.darkGray
+        chartDataSet.shadowWidth = 5
+        chartDataSet.decreasingColor = UIColor.red
+        chartDataSet.decreasingFilled = true
+        chartDataSet.increasingColor = UIColor.green
+        chartDataSet.increasingFilled = true
+        chartDataSet.neutralColor = UIColor.blue
+        
+        candleChartView.data = chartData
+    }
+    
+    private func drawInCustomChart(candels: [CandleModel]) {
+        let dataPoints: [CandleChartDataPoint] = candels.map {
+            CandleChartDataPoint(x: $0.x,
+                                 shadowH: $0.shadowH,
+                                 shadowL: $0.shadowL,
+                                 open: $0.open,
+                                 close: $0.close)
+        }
+        
+        let chartDataSource = CandleChartDataSource(with: dataPoints)
+        customChart.dataSource = chartDataSource
+    }
+    
     // MARK: - Actions
     
     @IBAction func switchTouch(_ sender: UISwitch) {
@@ -63,41 +101,9 @@ class ChartViewController: BaseViewController<ChartPresentable>, ChartDisplayabl
     
     func draw(candels: [CandleModel]) {
         if chartSwitch.isOn {
-            let dataEntries: [CandleChartDataEntry] = candels.map {
-                CandleChartDataEntry(x: Double($0.x),
-                                     shadowH: $0.shadowH,
-                                     shadowL: $0.shadowL,
-                                     open: $0.open,
-                                     close: $0.close)
-            }
-            
-            let chartDataSet = CandleChartDataSet(values: dataEntries, label: Consts.Positions.BTCUSD)
-            let chartData = CandleChartData(dataSets: [chartDataSet])
-            
-            chartDataSet.increasingFilled = true
-            
-            chartDataSet.shadowColor = UIColor.darkGray
-            chartDataSet.shadowWidth = 5
-            chartDataSet.decreasingColor = UIColor.red
-            chartDataSet.decreasingFilled = true
-            chartDataSet.increasingColor = UIColor.green
-            chartDataSet.increasingFilled = true
-            chartDataSet.neutralColor = UIColor.blue
-            
-            candleChartView.data = chartData
-            
+            drawInChart(candels: candels)
             return
         }
-        
-        var dataPoints: [CandleChartDataPoint] = candels.map {
-            CandleChartDataPoint(x: $0.x,
-                                 shadowH: $0.shadowH,
-                                 shadowL: $0.shadowL,
-                                 open: $0.open,
-                                 close: $0.close)
-        }
-
-        let chartDataSource = CandleChartDataSource(with: dataPoints)
-        customChart.dataSource = chartDataSource
+        drawInCustomChart(candels: candels)
     }
 }
